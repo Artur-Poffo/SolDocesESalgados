@@ -220,14 +220,6 @@ html {
         box-shadow: 10px 10px 60px black;
     }
 
-    .close-Menu {
-        position: absolute;
-        top: 25px;
-        right: 25px;
-        color: #eee;
-        cursor: pointer;
-    }
-
     .mobile-list {
         display: flex;
         width: 100vw;
@@ -237,8 +229,16 @@ html {
         background-color: #343A40;
         z-index: 2;
         position: fixed;
-        bottom: -100%;
+        right: -110%;
         transition: all .7s ease;
+    }
+
+    .close-Menu {
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        color: #eee;
+        cursor: pointer;
     }
 
     .list {
@@ -250,6 +250,6 @@ html {
     }
 
     .open-menu {
-        bottom: 0;
+        right: 0;
     }
 }
