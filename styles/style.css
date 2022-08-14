@@ -104,7 +104,6 @@ html {
 .default-btn:hover {
     background-color: #343A40;
     color: white;
-    transform: scale(1.1);
 }
 
 .home-right img {
@@ -116,7 +115,7 @@ html {
     padding: 50px;
 }
 
-.title {
+.title, .sub-title {
     font-size: 2rem;
     font-family: var(--action-font);
     text-align: center;
@@ -125,7 +124,7 @@ html {
     margin: 40px 0;
 }
 
-.title::after, .title::before {
+.title::after, .title::before, .sub-title::after, .sub-title::before {
     content: '---------';
     margin: 10px;
 }
@@ -161,6 +160,35 @@ html {
 
 .card i {
     margin-bottom: 10px;
+}
+
+.sub-title {
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+}
+
+.container-produtos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.folder {
+    width: 80vw;
+    background-color: #343A40;
+    padding: 30px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: all .8s ease;
+}
+
+.folder-item img {
+    width: 320px;
+    height: 300px;
+    border-radius: 5px;
 }
 
 /* MEDIA SECTION */
