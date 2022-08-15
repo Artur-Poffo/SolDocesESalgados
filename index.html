@@ -1,132 +1,167 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sol Doces & Salgados</title>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/style.css">
-    <script defer src="https://kit.fontawesome.com/1c241c6a24.js" crossorigin="anonymous"></script>
-</head>
-<body>
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script
+      defer
+      src="https://kit.fontawesome.com/1c241c6a24.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <div class="mobile-menu">
-        <i class="fa-solid fa-bars-staggered"></i>
+      <i class="fa-solid fa-bars-staggered"></i>
     </div>
 
     <div class="mobile-list">
-        <i class="fa-solid fa-x close-Menu"></i>
+      <i class="fa-solid fa-x close-Menu"></i>
 
-        <ul class="list">
-            <li><a onclick="fechaMenuMobile(this)" href="#home">Home</a></li>
-            <li><a onclick="fechaMenuMobile(this)" href="#sobre">Sobre</a></li>
-            <li><a onclick="fechaMenuMobile(this)" href="#info">Informações</a></li>
-            <li><a onclick="fechaMenuMobile(this)" href="#">Produtos</a></li>
-            <li><a onclick="fechaMenuMobile(this)" href="#">Contato</a></li>
-        </ul>
+      <ul class="list">
+        <li><a onclick="fechaMenuMobile(this)" href="#home">Home</a></li>
+        <li><a onclick="fechaMenuMobile(this)" href="#sobre">Sobre</a></li>
+        <li><a onclick="fechaMenuMobile(this)" href="#info">Informações</a></li>
+        <li>
+          <a onclick="fechaMenuMobile(this)" href="/html/produtos.html"
+            >Produtos</a
+          >
+        </li>
+        <li><a onclick="fechaMenuMobile(this)" href="#contato">Contato</a></li>
+      </ul>
     </div>
 
     <nav class="navbar show">
-        <ul class="list">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#info">Informações</a></li>
-            <li><a href="#">Produtos</a></li>
-            <li><a href="#">Contato</a></li>
-        </ul>
+      <ul class="list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#info">Informações</a></li>
+        <li><a href="/html/produtos.html">Produtos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
     </nav>
 
     <section id="home">
-        <div id="home-container">
-            <div data-aos="fade" data-aos-duration="3000" class="home-left">
-                <h1>Sol Doces & Salgados</h1>
-                <p>Conheça mais sobre nosso trabalho:</p>
-                <a href="#sobre"><button class="default-btn">Explorar</button></a>
-            </div>
-            
-            <div class="home-right">
-                <img data-aos="fade-left" data-aos-duration="2000" src="./assets/HomeAnimate.svg" alt="imagem bolo">
-            </div>
-        </div>    
+      <div id="home-container">
+        <div data-aos="fade" data-aos-duration="3000" class="home-left">
+          <h1>Sol Doces & Salgados</h1>
+          <p>Conheça mais sobre nosso trabalho:</p>
+          <a href="#sobre"><button class="default-btn">Explorar</button></a>
+        </div>
+
+        <div class="home-right">
+          <img
+            data-aos="fade-left"
+            data-aos-duration="2000"
+            src="./assets/HomeAnimate.svg"
+            alt="imagem bolo"
+          />
+        </div>
+      </div>
+
+      <div class="social-media-links">
+        <a href="https://web.whatsapp.com/send?phone=5547997433246" target="_blank">
+          <div class="whats">
+            <i class="fa-brands fa-whatsapp"></i>
+          </div>
+        </a>
+
+        <a href="https://www.instagram.com/soldocesesalgados1/">
+          <div class="insta">
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </a>
+      </div>
     </section>
 
     <section id="sobre">
-        <h1 data-aos="fade" data-aos-duration="1000" class="title">Sobre</h1>
+      <h1 data-aos="fade" data-aos-duration="1000" class="title">Sobre</h1>
 
-        <div data-aos="fade-left" data-aos-duration="1000" class="sobre-container">
-            <h2>Sol Doces & Salgados <br> Blumenau - SC</h2>
-            <p>Nossa empresa atende apenas em Blumenau - SC e tem consolidado mais de <strong>1000</strong> clientes durante toda essa trajetória. Temos como objetivo te alegrar com o nosso melhor. Para fazer seu pedido veja o conteúdo da seção informações</p>
-        </div>
+      <div
+        data-aos="fade-left"
+        data-aos-duration="1000"
+        class="sobre-container"
+      >
+        <h2>
+          Sol Doces & Salgados <br />
+          Blumenau - SC
+        </h2>
+        <p>
+          Nossa empresa atende apenas em Blumenau - SC e tem consolidado mais de
+          <strong>1000</strong> clientes durante toda essa trajetória. Temos
+          como objetivo te alegrar com o nosso melhor. Para fazer seu pedido
+          veja o conteúdo da seção informações
+        </p>
+      </div>
     </section>
 
     <section id="info">
-        <h1 data-aos="fade" data-aos-duration="1000" class="title">Informações</h1>
+      <h1 data-aos="fade" data-aos-duration="1000" class="title">
+        Informações
+      </h1>
 
-        <div class="info-container">
-            <div class="cards">
-                <div data-aos="fade-down" data-aos-duration="1000" class="card">
-                    <i class="fa-solid fa-cake-candles fa-2x"></i>
-                    <p>Os nossos produtos são feitos com muito carinho e sempre optamos por qualidade a cima de tudo, caso queira conferir nossa vasta variedade de doces e salgados. vá para seção de <a href="#produtos">Produtos</a></p>
-                </div>
+      <div class="info-container">
+        <div class="cards">
+          <div data-aos="fade-down" data-aos-duration="1000" class="card">
+            <i class="fa-solid fa-cake-candles fa-2x"></i>
+            <p>
+              Os nossos produtos são feitos com muito carinho e sempre optamos
+              por qualidade a cima de tudo, caso queira conferir nossa vasta
+              variedade de doces e salgados. vá para seção de
+              <a href="./html/produtos.html">Produtos</a>
+            </p>
+          </div>
 
-                <div data-aos="fade-down" data-aos-duration="1000" class="card">
-                    <i class="fa-solid fa-credit-card fa-2x"></i>
-                    <p>
-                        Temos algumas formas de pagamento que são importantes você conhecer antes de realizar o seu pedido:
-                        Dinheiro; Cheque pessoal a vista; Pix. <br>
-                        <span style="color: crimson;" >O pix deve ser feito antes da retirada do produto e o comprvante deve ser enviado.</span>
-                    </p>
-                </div>
+          <div data-aos="fade-down" data-aos-duration="1000" class="card">
+            <i class="fa-solid fa-credit-card fa-2x"></i>
+            <p>
+              Temos algumas formas de pagamento que são importantes você
+              conhecer antes de realizar o seu pedido: Dinheiro; Cheque pessoal
+              a vista; Pix. <br />
+              <span style="color: crimson"
+                >O pix deve ser feito antes da retirada do produto e o
+                comprvante deve ser enviado.</span
+              >
+            </p>
+          </div>
 
-                <div data-aos="fade-down" data-aos-duration="1000" class="card">
-                    <i class="fa-solid fa-car fa-2x"></i>
-                    <p>
-                        Trabalhamos com retirada e entregas a domicílio mas temos horários especificos para cada um deles. <br>
-                        Segunda a sábado: <br>
-                        <span style="color: crimson;">07:30 às 09:00; 13:30 às 15:00; 18:00 às 20:00.</span> <br>
-                        Domingos e feriados: <br>
-                        <span style="color: crimson;">09:00 às 11:00</span> <br>
-                        Entrega a domicílio apenas de segunda a sábado, entre 09:00 e 12:00
-                    </p>
-                </div>
+          <div data-aos="fade-down" data-aos-duration="1000" class="card">
+            <i class="fa-solid fa-car fa-2x"></i>
+            <p>
+              Trabalhamos com retirada e entregas a domicílio mas temos horários
+              especificos para cada um deles. <br />
+              Segunda a sábado: <br />
+              <span style="color: crimson"
+                >07:30 às 09:00; 13:30 às 15:00; 18:00 às 20:00.</span
+              >
+              <br />
+              Domingos e feriados: <br />
+              <span style="color: crimson">09:00 às 11:00</span> <br />
+              Entrega a domicílio apenas de segunda a sábado, entre 09:00 e
+              12:00
+            </p>
+          </div>
 
-                <div data-aos="fade-down" data-aos-duration="1000" class="card">
-                    <i class="fa-solid fa-phone fa-2x"></i>
-                    <p>Caso tenha gostado do que viu e tenha decidido fazer um pedido, nos mande mensagem pelo Whatsapp no número disponível na seção de <a href="#contato">Contato</a></p>
-                </div>
-
-            </div>
+          <div data-aos="fade-down" data-aos-duration="1000" class="card">
+            <i class="fa-solid fa-phone fa-2x"></i>
+            <p>
+              Caso tenha gostado do que viu e tenha decidido fazer um pedido,
+              nos mande mensagem pelo Whatsapp no número disponível na seção de
+              <a href="#contato">Contato</a>
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
-    <section id="produtos">
-        <h1 data-aos="fade" data-aos-duration="1000" class="title">Produtos</h1>
-
-        <div class="container-produtos">
-            <h2 data-aos="fade" data-aos-duration="500" class="sub-title" >Algumas de nossas opções!</h2>
-
-            <div data-aos="fade" data-aos-duration="1000" class="folder">
-               <div class="folder-item">
-                    <img src="./assets/doce1.jpg" alt="Doce 1">
-               </div>
-               <div class="folder-item">
-                    <img src="./assets/product10.jpg" alt="Doce 1">
-               </div>
-               <div class="folder-item">
-                    <img src="./assets/doce4.jpg" alt="Doce 1">
-               </div>
-               <div class="folder-item">
-                    <img src="./assets/doce2.jpg" alt="Doce 1">
-               </div>
-            </div>
-
-            <a href="/html/produtos.html"><button class="default-btn" >Ver Mais!</button></a>
-        </div>
-
+    <section id="contato">
+      <h1 class="title">Contato</h1>
     </section>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./scripts/script.js"></script>
-</body>
+  </body>
 </html>
