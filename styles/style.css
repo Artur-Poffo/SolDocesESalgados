@@ -114,6 +114,7 @@ html {
   height: 100vh;
   position: fixed;
   right: 70px;
+  z-index: 2;
   top: 50%;
 }
 
@@ -152,9 +153,7 @@ html {
 }
 
 .title::after,
-.title::before,
-.sub-title::after,
-.sub-title::before {
+.title::before {
   content: "---------";
   margin: 10px;
 }
@@ -250,6 +249,36 @@ html {
   margin-bottom: 50px;
 }
 
+.contato-container {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+footer {
+  background-color: #343a40;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  gap: 10px;
+}
+
+.footer-link {
+  color: #eee;
+  font-family: var(--primary-font);
+  text-transform: uppercase;
+  transition: all .4s ease;
+}
+
+.footer-link:visited {
+  color: #eee;
+}
+
+.footer-link:hover {
+  color: grey;
+}
+
 /* MEDIA SECTION */
 
 @media (max-width: 1300px) {
@@ -293,6 +322,7 @@ html {
   .title::after,
   .title::before {
     content: "";
+    margin: 0;
   }
 
   .navbar {
